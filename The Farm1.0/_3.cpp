@@ -1,6 +1,6 @@
 #include"_1.h"
 
-string getTime()    //²»ÊôÓÚÀàgrow
+string getTime()    //ä¸å±äºç±»grow
 {
     time_t timep;
     time (&timep);
@@ -8,7 +8,7 @@ string getTime()    //²»ÊôÓÚÀàgrow
     strftime(tmp, sizeof(tmp), "%Y%m%d%H%M%S",localtime(&timep) );
     return tmp;
 }
-//ÒÔÏÂÓĞÏÂ»®Ïßºó×ºµÄº¯Êı¾ùÎª·µ»ØÈÕÆÚ Ê±¼ä
+//ä»¥ä¸‹æœ‰ä¸‹åˆ’çº¿åç¼€çš„å‡½æ•°å‡ä¸ºè¿”å›æ—¥æœŸ æ—¶é—´
 string grow::SeedTime_m()
 {
 string time = getTime();
@@ -21,10 +21,10 @@ d=time.substr(8,2);
 e=time.substr(10,2);
 f=time.substr(12,2);
 char filename[30]="D://TheFarm//seedtime.txt";
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<getTime(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<getTime(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 return b;
 }
 
@@ -41,10 +41,10 @@ d=time.substr(8,2);
 e=time.substr(10,2);
 f=time.substr(12,2);
 char filename[30]="D://TheFarm//seedtime.txt";
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<getTime(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<getTime(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 return c;
 }
 
@@ -60,10 +60,10 @@ d=time.substr(8,2);
 e=time.substr(10,2);
 f=time.substr(12,2);
 char filename[30]="D://TheFarm//seedtime.txt";
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<getTime(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<getTime(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 return d;
 }
 
@@ -79,10 +79,10 @@ d=time.substr(8,2);
 e=time.substr(10,2);
 f=time.substr(12,2);
 char filename[30]="D://TheFarm//seedtime.txt";
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<getTime(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<getTime(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 return e;
 }
 
@@ -98,10 +98,10 @@ d=time.substr(8,2);
 e=time.substr(10,2);
 f=time.substr(12,2);
 char filename[30]="D://TheFarm//seedtime.txt";
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<getTime(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<getTime(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 return f;
 }
 
@@ -111,10 +111,10 @@ void grow::devide_m()
 	ofstream ate;
 	ofstream ofile("D://TheFarm//premonth.txt");
 	char filename[30]="D://TheFarm//premonth.txt";   
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<SeedTime_m(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<SeedTime_m(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 }
 
 void grow::devide_d()
@@ -122,10 +122,10 @@ void grow::devide_d()
 	ofstream ate;
 	ofstream ofile("D://TheFarm//preday.txt");
 	char filename[30]="D://TheFarm//preday.txt";   
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<SeedTime_d(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<SeedTime_d(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 }
 
 void grow::devide_h()
@@ -133,10 +133,10 @@ void grow::devide_h()
 	ofstream ate;
 	ofstream ofile("D://TheFarm//prehour.txt");
 	char filename[30]="D://TheFarm//prehour.txt";   
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<SeedTime_h(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<SeedTime_h(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 }
 
 void grow::devide_min()
@@ -144,10 +144,10 @@ void grow::devide_min()
 	ofstream ate;
 	ofstream ofile("D://TheFarm//premin.txt");
 	char filename[30]="D://TheFarm//premin.txt";   
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<SeedTime_min(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<SeedTime_min(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 }
 
 void grow::devide_s()
@@ -155,18 +155,11 @@ void grow::devide_s()
 	ofstream ate;
 	ofstream ofile("D://TheFarm//presecond.txt");
 	char filename[30]="D://TheFarm//presecond.txt";   
-ate.open(filename,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/ 
-ate<<SeedTime_s(); /*Ğ´ÈëÊı¾İ*/ 
-ate.close(); /*¹Ø±ÕÎÄ¼ş*/ 
-ate.clear(); /*ÇåÀí*/
+ate.open(filename,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/ 
+ate<<SeedTime_s(); /*å†™å…¥æ•°æ®*/ 
+ate.close(); /*å…³é—­æ–‡ä»¶*/ 
+ate.clear(); /*æ¸…ç†*/
 }
-
-
-
-
-
-
-
 
 string grow::ReapTime()
 {
@@ -180,14 +173,13 @@ d2=time.substr(8,2);
 e2=time.substr(10,2);
 f2=time.substr(12,2);
 char filename2[30]="D://TheFarm//reaptime.txt";
-ate.open(filename2,ostream::ate);/*ÒÔÌí¼ÓÄ£Ê½´ò¿ªÎÄ¼ş*/
-ate<<getTime();   /*Ğ´ÈëÊı¾İ*/
-ate.close();   /*¹Ø±ÕÎÄ¼ş*/
-ate.clear();   /*ÇåÀí*/
+ate.open(filename2,ostream::ate);/*ä»¥æ·»åŠ æ¨¡å¼æ‰“å¼€æ–‡ä»¶*/
+ate<<getTime();   /*å†™å…¥æ•°æ®*/
+ate.close();   /*å…³é—­æ–‡ä»¶*/
+ate.clear();   /*æ¸…ç†*/
 
 return a2,b2,c2,d2,e2,f2;
 }
-
 
 int grow::turn2()
 {
@@ -201,49 +193,47 @@ int grow::turn2()
 	stringstream ss;
 	ss<<m;
 	ss>>temp;
-	time+=temp*=100000000;//ÔÂµÄÊıÁ¿¼¶
+	time+=temp*=100000000;//æœˆçš„æ•°é‡çº§
 	ss.clear();
 	ss<<d;
 	ss>>temp;
-	time+=temp*1000000;//ÈÕµÄÊıÁ¿¼¶
+	time+=temp*1000000;//æ—¥çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<h;
 	ss>>temp;
-	time+=temp*=10000;//Ê±µÄÊıÁ¿¼¶
+	time+=temp*=10000;//æ—¶çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<min;
 	ss>>temp;
-	time+=temp*=100;//·ÖµÄÊıÁ¿¼¶
+	time+=temp*=100;//åˆ†çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<s;
 	ss>>temp;
-	time+=temp;//ÃëµÄÊıÁ¿¼¶
+	time+=temp;//ç§’çš„æ•°é‡çº§
 	return time;
 }
 
 
-
-
-//ÒÔÏÂÊÇ´ÓÎÄ±¾ÎÄ¼şÖĞ»ñÈ¡²¥ÖÖÊ±¼äµÄ²Ù×÷
+//ä»¥ä¸‹æ˜¯ä»æ–‡æœ¬æ–‡ä»¶ä¸­è·å–æ’­ç§æ—¶é—´çš„æ“ä½œ
 string grow::readFileIntoString(char * filename)
 	{
 ifstream ifile(filename);
-//½«ÎÄ¼ş¶ÁÈëµ½ostringstream¶ÔÏóbufÖĞ
+//å°†æ–‡ä»¶è¯»å…¥åˆ°ostringstreamå¯¹è±¡bufä¸­
 ostringstream buf;
 char ch;
 while(buf&&ifile.get(ch))
 buf.put(ch);
-//·µ»ØÓëÁ÷¶ÔÏóbuf¹ØÁªµÄ×Ö·û´®
+//è¿”å›ä¸æµå¯¹è±¡bufå…³è”çš„å­—ç¬¦ä¸²
 return buf.str();
 }
  
  
 string grow::prem()
 {
-//ÎÄ¼şÃû
+//æ–‡ä»¶å
 char * fn="D://TheFarm//premonth.txt";
 string str;
 str=readFileIntoString(fn);
@@ -252,7 +242,7 @@ return str;
 
 string grow::pred()
 {
-//ÎÄ¼şÃû
+//æ–‡ä»¶å
 char * fn="D://TheFarm/preday.txt";
 string str;
 str=readFileIntoString(fn);
@@ -261,7 +251,7 @@ return str;
 
 string grow::preh()
 {
-//ÎÄ¼şÃû
+//æ–‡ä»¶å
 char * fn="D://TheFarm/prehour.txt";
 string str;
 str=readFileIntoString(fn);
@@ -270,7 +260,7 @@ return str;
 
 string grow::premin()
 {
-//ÎÄ¼şÃû
+//æ–‡ä»¶å
 char * fn="D://TheFarm/premin.txt";
 string str;
 str=readFileIntoString(fn);
@@ -279,7 +269,7 @@ return str;
 
 string grow::pres()
 {
-//ÎÄ¼şÃû
+//æ–‡ä»¶å
 char * fn="D://TheFarm/presecond.txt";
 string str;
 str=readFileIntoString(fn);
@@ -298,39 +288,39 @@ int grow::turn1()
 	stringstream ss;
 	ss<<m;
 	ss>>temp;
-	time+=temp*=100000000;//ÔÂµÄÊıÁ¿¼¶
+	time+=temp*=100000000;//æœˆçš„æ•°é‡çº§
 	ss.clear();
 	ss<<d;
 	ss>>temp;
-	time+=temp*1000000;//ÈÕµÄÊıÁ¿¼¶
+	time+=temp*1000000;//æ—¥çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<h;
 	ss>>temp;
-	time+=temp*=10000;//Ê±µÄÊıÁ¿¼¶
+	time+=temp*=10000;//æ—¶çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<min;
 	ss>>temp;
-	time+=temp*=100;//·ÖµÄÊıÁ¿¼¶
+	time+=temp*=100;//åˆ†çš„æ•°é‡çº§
 	ss.clear();
 
 	ss<<s;
 	ss>>temp;
-	time+=temp;//ÃëµÄÊıÁ¿¼¶
+	time+=temp;//ç§’çš„æ•°é‡çº§
 	return time;
 }
 
 int grow::reap(int time1,int time2)
 {
 	int cost=1200;
-	int k=0,add_gold=0,k1=0,k2=0,k3=0,k4=0;   //ÆäÖĞ£¬add_gold ×÷Îª±¾º¯Êı·µ»ØÖµ£¬ÓÃÀ´Îªreset_gold()º¯ÊıÅĞ¶ÏÊÇ·ñÔö¼õ½ğ±Ò
+	int k=0,add_gold=0,k1=0,k2=0,k3=0,k4=0;   //å…¶ä¸­ï¼Œadd_gold ä½œä¸ºæœ¬å‡½æ•°è¿”å›å€¼ï¼Œç”¨æ¥ä¸ºreset_gold()å‡½æ•°åˆ¤æ–­æ˜¯å¦å¢å‡é‡‘å¸
 	time1=turn1();
 	time2=turn2();
-	k=cost-(time2-time1);  //kÊÇÓÃÀ´¼ÆËãÈ·¶¨×÷ÎïÊÇ·ñ³ÉÊì
+	k=cost-(time2-time1);  //kæ˜¯ç”¨æ¥è®¡ç®—ç¡®å®šä½œç‰©æ˜¯å¦æˆç†Ÿ
 	if((time2-time1)>=cost)
 	{
-		cout<<"×÷ÎïÒÑ³ÉÊì£¬¿ìÊÕ»ñ°É£¡"<<endl;
+		cout<<"ä½œç‰©å·²æˆç†Ÿï¼Œå¿«æ”¶è·å§ï¼"<<endl;
 		add_gold=1;
 	}
 	else
@@ -339,50 +329,50 @@ int grow::reap(int time1,int time2)
 	{
 	if(k>86400)
 	{
-		k1=k/86400;   //ÈÕ
+		k1=k/86400;   //æ—¥
 		k=k%86400;
 	}
 	else if(k>3600&&k<86400)
 	{
-		k2=k/3600;   //Ê±
+		k2=k/3600;   //æ—¶
 		k=k%3600;
 	}
 	else if(k<3600&&k>60)
 	{
-		k3=k/60;    //·Ö
+		k3=k/60;    //åˆ†
 		k=k%60;
 	}
 	else if(k<60)
 	{
-		k4=k;     //Ãë
+		k4=k;     //ç§’
 		k=0;
 		
 	}
 	}while(k!=0);
-		cout<<"×÷ÎïÎ´³ÉÊì£¬ÔÙµÈµÈ°É£¡"<<endl;
-		cout<<"×÷Îï»¹ĞèÒª£º";
+		cout<<"ä½œç‰©æœªæˆç†Ÿï¼Œå†ç­‰ç­‰å§ï¼"<<endl;
+		cout<<"ä½œç‰©è¿˜éœ€è¦ï¼š";
 		if(k1)
 		{
-			cout<<k1<<"Ìì";
+			cout<<k1<<"å¤©";
 		}
 		if(k2)
 		{
-			cout<<k2<<"Ğ¡Ê±";
+			cout<<k2<<"å°æ—¶";
 		}
 		if(k3)
 		{
-			cout<<k3<<"·Ö";
+			cout<<k3<<"åˆ†";
 		}
 		if(k4)
 		{
-			cout<<k4<<"Ãë";
+			cout<<k4<<"ç§’";
 		}
-		cout<<"³ÉÊì";
+		cout<<"æˆç†Ÿ";
 	}
 	return add_gold;
 }
 
-void grow::setfile()  //½¨Á¢´æ·ÅÎÄ±¾µÄÎÄ¼ş¼Ğ
+void grow::setfile()  //å»ºç«‹å­˜æ”¾æ–‡æœ¬çš„æ–‡ä»¶å¤¹
 {
 	 string dirName = "D://TheFarm";
     _mkdir(dirName.c_str()); 
