@@ -1,3 +1,3 @@
 # Enlighten
 
-It may be a fantastic and unforgetable beginning.
+The code was written before July.It may be my fantastic and unforgetable beginning.
