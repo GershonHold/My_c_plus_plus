@@ -10,32 +10,29 @@ using namespace std;
 class farm
 {
 public:
-	char Farmer();   //Å©³¡Ö÷êÇ³Æ£¬¿ÉĞŞ¸Ä
-
+	char Farmer();   //å†œåœºä¸»æ˜µç§°ï¼Œå¯ä¿®æ”¹
 	string readFileIntoString(char * filename);
-    int Gold();      //½ğ±Ò
+        int Gold();      //é‡‘å¸
 	int reset_gold();
-	char rename();   //ÉèÖÃ/ÖØÖÃĞÕÃû
+	char rename();   //è®¾ç½®/é‡ç½®å§“å
 	char welcome();
+	
 private:
-	char farmer;   //Å©³¡Ö÷êÇ³Æ
-	int g;   //½ğ±ÒÊıÁ¿
+	char farmer;   //å†œåœºä¸»æ˜µç§°
+	int g;   //é‡‘å¸æ•°é‡
 };
 
 class grow
 {
-
-public:
-
+	public:
 	friend farm;
-	void setfile();
-
+	
 	string SeedTime_m();
 	string SeedTime_d();
 	string SeedTime_h();
 	string SeedTime_min();
 	string SeedTime_s();
-	
+	void setfile();
 	void devide_m();
 	void devide_d();
 	void devide_h();
@@ -44,18 +41,20 @@ public:
 	
 	int reap(int time1,int time2);
 	string ReapTime();
-	int turn1();//turn1ÊÇ×ª»¯µÃµ½ÖÖÖ²×÷ÎïÊ±¼ä¶ÔÓ¦±È½ÏÖµµÄº¯Êı
-	int turn2();//turn2ÊÇ×ª»¯µÃµ½²é¿´×÷ÎïÊÇ·ñ³ÉÊìÊ±¼ä¶ÔÓ¦±È½ÏÖµµÄº¯Êı
+	int turn1();//turn1æ˜¯è½¬åŒ–å¾—åˆ°ç§æ¤ä½œç‰©æ—¶é—´å¯¹åº”æ¯”è¾ƒå€¼çš„å‡½æ•°
+	int turn2();//turn2æ˜¯è½¬åŒ–å¾—åˆ°æŸ¥çœ‹ä½œç‰©æ˜¯å¦æˆç†Ÿæ—¶é—´å¯¹åº”æ¯”è¾ƒå€¼çš„å‡½æ•°
 	string readFileIntoString(char * filename);
 	string prem();
 	string pred();
 	string preh();
 	string premin();
 	string pres();
+	
 private:
-	int xuhao;     //×÷ÎïĞòºÅ
-	char name;
+	int xuhao;     //ä½œç‰©åºå·
 	int time;
 	int price;
 	int income;
+	char name;
+	
 }; 
